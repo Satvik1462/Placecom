@@ -26,7 +26,7 @@ const ForgotPassword = () => {
   const getQuestion = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/users/get-security-question",
+        "https://placecom-2g3d.onrender.com/users/get-security-question",
         {
           Email: form.Email
         }
@@ -45,7 +45,7 @@ const ForgotPassword = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/users/reset-password",
+        "https://placecom-2g3d.onrender.com/users/reset-password",
         form
       );
 

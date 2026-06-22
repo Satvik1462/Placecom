@@ -29,7 +29,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://placecom-2g3d.onrender.com/users/register",
         form
       );
 

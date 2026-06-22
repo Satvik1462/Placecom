@@ -15,7 +15,7 @@ const AdminDashboard = () => {
   const fetchUsers = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/users/show"
+        "https://placecom-2g3d.onrender.com/users/show"
       );
 
       setUsers(res.data);
@@ -33,7 +33,7 @@ const AdminDashboard = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        "http://localhost:5000/users/delete",
+        "https://placecom-2g3d.onrender.com/users/delete",
         {
           data: { id }
         }
@@ -61,7 +61,7 @@ const AdminDashboard = () => {
   const handleSave = async () => {
     try {
       await axios.put(
-        "http://localhost:5000/users/update",
+        "https://placecom-2g3d.onrender.com/users/update",
         {
           id: editingId,
           Name: editForm.Name,

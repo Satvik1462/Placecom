@@ -24,7 +24,7 @@ const Profile = () => {
   const handleUpdate = async () => {
     try {
       const res = await axios.put(
-        "http://localhost:5000/users/update",
+        "https://placecom-2g3d.onrender.com/users/update",
         {
           id: userId,
           Name: form.Name,
